@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { faEnvelope, faHandPeace } from '@fortawesome/free-regular-svg-icons';
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,4 +15,11 @@ export class AppComponent {
   faEmail = faEnvelope;
 
   title = 'spinalNetwork';
+
+  constructor(private router:Router) {}
+
+  goToURL(url : any)
+  {
+    this.router.navigateByUrl('/main#'+ url)
+  }
 }

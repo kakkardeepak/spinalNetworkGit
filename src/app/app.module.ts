@@ -7,6 +7,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RehabilitationComponent } from './rehabilitation/rehabilitation.component';
 import { ExpertWitnessComponent } from './expert-witness/expert-witness.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ExpertWitnessComponent } from './expert-witness/expert-witness.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

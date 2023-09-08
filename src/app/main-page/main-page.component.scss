@@ -1,4 +1,20 @@
-.carousel-caption {
+// .carousel-caption {
+//     position: absolute;
+//     display: block;
+//     /* right: 1.25rem; */
+//     top: 10%;
+//     // left: 11%;
+//     // padding-top: 1.25rem;
+//     // padding-bottom: 1.25rem;
+//     color: #fff;
+//     width: 30%;
+//     text-align: left;
+//     color: black;
+// }
+
+@media(min-width : 700px)
+{
+  .carousel-caption {
     position: absolute;
     /* right: 1.25rem; */
     top: 20%;
@@ -9,6 +25,8 @@
     width: 30%;
     text-align: left;
     color: black;
+}
+
 }
 
 .widget-title {
@@ -45,27 +63,65 @@
     object-fit: cover;
     object-position: center;
     border-radius: 15px;     // height: 100%;
-    height : 100px;
+    height : 400px;
     width : 100%;
 }
 
+.img-wrapper > .content
+{
+     position: absolute;
+     inset: 0;
+     font-size: 0.9rem;
+     padding: 1rem;
+     display: flex;
+     // justify-content: center;
+     align-items: center;
+     color: white;
+ }
+
+ .img-wrapper > .content.slide-down {
+  opacity: 1;
+  // transform: translateY(-100%);
+}
+
+.img-wrapper:hover > .content.slide-down {
+  opacity: 1;
+  // transform: translateY(0);
+}
+
+.imgMember-wrapper > .content.fade {
+  opacity: 1;
+  text-align: left;
+  // align-items: start;
+  // transform: translateY(-100%);
+}
+
+// .imgMember-wrapper:hover > .content.fade {
+//   opacity: 1;
+//   // background-color: rgb(19,47,111);
+//   // margin: 5px;
+//   // transform: translateY(-100%);
+// }
+
 @media(min-width : 700px)
 {
-    .img-wrapper > img {
-      height : 400px;
-    }
+    // .img-wrapper > img {
+    //   height : 400px;
+    // }
 
-    .img-wrapper > .content
-   {
-        position: absolute;
-        inset: 0;
-        font-size: 0.9rem;
-        padding: 1rem;
-        display: flex;
-        // justify-content: center;
-        align-items: center;
-        color: white;
-    }
+  //   .img-wrapper > .content
+  //  {
+  //       position: absolute;
+  //       inset: 0;
+  //       font-size: 0.9rem;
+  //       padding: 1rem;
+  //       display: flex;
+  //       // justify-content: center;
+  //       align-items: center;
+  //       color: white;
+  //   }
+
+ 
 
     .imgMember-wrapper > .content {
         position: absolute;
@@ -80,14 +136,22 @@
     }
 
     .img-wrapper > .content.slide-down {
-        opacity: 0;
-        // transform: translateY(-100%);
+      opacity: 0;
+      // transform: translateY(-100%);
     }
 
-    .img-wrapper:hover > .content.slide-down {
-        opacity: 1;
-        // transform: translateY(0);
-    }
+    .imgMember-wrapper > .content.fade {
+      opacity: 0;
+  }
+
+    .imgMember-wrapper:hover > .content.fade {
+      opacity: 1;
+      background-color: rgb(19,47,111);
+      // margin: 5px;
+      // transform: translateY(-100%);
+  }
+
+    
 
 }
 
@@ -104,18 +168,6 @@
 //     opacity: 0;
 //     // transform: translateY(-100%);
 // }
-
-.imgMember-wrapper > .content.fade {
-    opacity: 0;
-    // transform: translateY(-100%);
-}
-
-.imgMember-wrapper:hover > .content.fade {
-    opacity: 1;
-    background-color: rgb(19,47,111);
-    // margin: 5px;
-    // transform: translateY(-100%);
-}
 
 .expand:hover {
     transition: 5s ease-in-out;
@@ -181,16 +233,16 @@
   }
 
   .paragraph {
-    text-align: center;
+    text-align: left;
   }
 
-@media(min-width : 700px)
-  {
-    .paragraph  {
-        text-align: left;
-    }
+// @media(min-width : 700px)
+//   {
+//     .paragraph  {
+//         text-align: left;
+//     }
   
-  }
+//   }
 
   .img-container{
     position:relative;
@@ -224,14 +276,53 @@
 //   }
 
 input {
-    height: 30px;
+    height: 38px;
     border-radius: 3px;
     border: none;
     padding: 10px;
+    // font-family: 'open sans';
+    // font-size: 16px;
 }
+
+input:focus   
+ {
+    background-color: #fff;
+    color: #495057;
+    outline: none;
+    border: 1px solid #80bdff;
+}
+
+
 
 textarea {
     border-radius: 3px;
     border: none;
     padding: 5px;
 }
+
+// @media screen and (min-width:576px)
+// {
+//   .carousel-inner{
+//     display: flex;
+//   }
+
+//   .carousel-item{
+//     display: block;
+//     margin-right: 0;
+//     flex : 0 0 calc(100%/2);
+//   }
+// }
+
+// .carousel-inner{
+//   padding:1em;
+  
+// }
+
+// .card{
+//   margin : 0 0.5em;
+// }
+
+.carousel-inner > .carousel-item > img
+{ 
+  object-fit: fill;
+ }

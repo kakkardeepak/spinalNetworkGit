@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { ExpertWitnessComponent } from './expert-witness/expert-witness.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RehabilitationComponent } from './rehabilitation/rehabilitation.component';
@@ -13,8 +13,13 @@ const routes: Routes = [
   
 ];
 
+const routerOptions : ExtraOptions = {
+  scrollPositionRestoration : 'enabled',
+  anchorScrolling : 'enabled'
+}
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
