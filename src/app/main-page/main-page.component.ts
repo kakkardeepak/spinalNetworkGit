@@ -13,11 +13,11 @@ export class MainPageComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
-    navSpeed: 600,
+    navSpeed: 200,
     margin:40,
     navText: ['&#8249', '&#8250;'],
     responsive: {
@@ -38,12 +38,27 @@ export class MainPageComponent implements OnInit {
   }
 
   testimonials = [ 
-    "My physical therapist is excellent! The whole office is very friendly and helpful. Physio is absolutely outstanding. \
+    {text : "My physical therapist is excellent! The whole office is very friendly and helpful. Physio is absolutely outstanding. \
      Thank you very much for your great, attentive service",
-     "Everyone I worked with was wonderful, very professional, caring and prompt. My therapist was great, as were all of the aids!",
-     "All of the staff was fantastic! The care I received was impeccable. Great place! I also love the availability of the Fit Plan for\
-      continued support after my discharge Christopher Strock Back Pain Treatment",
-     "I had a really positive experience and my shoulder is totally functional again, without pain! I really enjoyed my therapist and all of the rest of the staff"
+     author : "John White",
+     treatment : "Back Pain Treatment"
+    },
+    {text : "Everyone I worked with was wonderful, very professional, caring and prompt. My therapist was great, as were all of the aids!",
+     author : "Christopher  Stroke",
+     treatment : "Shoulder Pain Treatment"
+    },
+    {text : "All of the staff was fantastic! The care I received was impeccable. Great place! I also love the availability of the Fit Plan for\
+    continued support after my discharge Christopher Strock Back Pain Treatment",
+     author : "Dave",
+     treatment : "Sports Injury Treatment"
+    },
+    {text : "I had a really positive experience and my shoulder is totally functional again, without pain! I really enjoyed my therapist and all of the rest of the staff",
+     author : "Tom",
+     treatment : "Back Pain Treatment"
+    }
+     
+     
+     
   
   ]
 

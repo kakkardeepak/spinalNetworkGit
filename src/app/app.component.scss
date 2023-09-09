@@ -175,3 +175,15 @@
 //     }
   
 //   }
+
+
+
+a:hover,
+a:focus {
+    color : #56afd5;
+  }
+
+  
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #56afd5;
+}

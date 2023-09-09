@@ -69,13 +69,24 @@
     color: #FFF;
     text-decoration: none;
 }
-.owl-theme .owl-nav [class*=owl-] {
+.owl-theme .owl-nav .owl-prev {
     color: #FFF;
     font-size: 35px;
     margin: -3px;
-    padding: 1px 12px;
-    background: #350783;
+    padding: 1px 20px;
+    background: #9a65a5;
     display: inline-block;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px 0 0 20px;
+}
+
+.owl-theme .owl-nav .owl-next {
+color: #FFF;
+font-size: 35px;
+margin: 1px;
+padding: 1px 20px;
+background: #9a65a5;
+display: inline-block;
+cursor: pointer;
+border-radius: 0 20px 20px 0;
 }

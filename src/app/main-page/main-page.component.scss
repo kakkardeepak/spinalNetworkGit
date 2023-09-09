@@ -162,6 +162,7 @@
         // justify-content: center;
         align-items: center;
         color: white;
+        text-align: center;
     }
 
     .img-wrapper > .content {
@@ -356,3 +357,51 @@ textarea {
     font-size: 1.3rem;
   }
 }
+
+
+
+.testimonial--quote
+{
+    margin: 30px 0;
+    // padding: 30px 40px 35px 90px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #a5a5a5;
+    border-radius: 2px;
+    border-left: none;
+    background: white;
+    font-style: italic;
+    
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial--description
+{
+  font-style: normal;
+  font-weight: bold;
+   color: #56afd5;
+
+}
+
+.testimonial--author
+{
+  font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    color: #464646;
+}
+
+.arrow-bottom:after {
+  content: "\142F";
+  position: absolute;
+  left: 30px;
+  bottom: -23px;
+  font-size: 20px;
+  // color: 
+  // border-top: 15px solid rgb(243,243,243);
+  // border-right: 15px solid transparent;
+  // border-left: 15px solid transparent;
+  // border-bottom: none;
+}
+
+

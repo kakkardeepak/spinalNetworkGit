@@ -1,5 +1,5 @@
-<div class="row pt-3 pb-3" style="background-color: white">
-    <div class="col-md-12 align-items-center" >
+<div class="row pt-3 pb-3" style="background-color: rgb(237,238, 238)">
+    <div class="col-md-12 align-items-center p-0" >
       <!-- data-bs-theme="dark" -->
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-indicators">
@@ -53,7 +53,7 @@
     </div>
   </div>
 
-  <div id="AboutUs" class="row mt-3 justify-content-md-center" style="background-color: rgb(237,238, 238);">
+  <div id="AboutUs" class="row justify-content-md-center" style="background-color: rgb(237,238, 238);">
     <div class="col-md-6 mt-3 justify-content-center">
       <h2 class="widget-title" ><span class="fw-normal">About </span>Us</h2>
       <div class="row">
@@ -434,7 +434,7 @@
         <div class="content p-2">
           <div>
           <span class="fw-bold fs-4">Miranda Cook</span><br>
-          Consultant' Occupational Therapist<br>
+          Consultant' Occupational Therapist<br><br>
           <strong>A wealth of experience and a broad understanding of spinal cord injury and its impact upon individuals and their families'</strong>
           <br>I have highly specialist skills in the field of spinal cord injury with 18 years of experience in the specialist area.  
           I am expert in occupational therapy assessment and intervention including wheelchair and seating assessments, hand therapy, functional rehabilitation and prescription of equipment and home adaptations.  
@@ -456,7 +456,7 @@
         <div class="content  p-2">
           <div>
           <span class="fw-bold fs-4">Shiva Jamwal</span><br>
-          Consultant' Occupational Therapist <br>
+          Consultant' Occupational Therapist <br><br>
           I am a Consultant occupational therapist with clinical expertise in managing spinal cord injury, stroke,  other neurological
           conditions. Having worked for over twenty years in private sectors, charitable organisations and National health services in
           the UK and abroad, I specialise in rehabilitation and management of spinal cord injuries and complex neurological disabilities .I am also an experienced expert witness for adults with Spinal cord injuries. 
@@ -486,7 +486,7 @@
 
     <div class="row mt-3 justify-content-center">
       <div class="col-md-10">
-        <h2 class="widget-title"><span class="fw-normal"> Client </span> Testimonials</h2>
+        <h2 class="widget-title">Client Testimonials</h2>
       </div>
     </div>
 
@@ -496,18 +496,18 @@
         <owl-carousel-o [options]="customOptions" >
           <ng-container #list *ngFor="let t of testimonials let i=index">
             <ng-template carouselSlide >
-              <div class="card p-3 text-center" style="color: rgb(183,183,183); height: 150px; vertical-align: bottom;">
+              <div class="card p-3 text-center noTransform" style=" height: 150px; vertical-align: bottom;">
                 <!-- <img src="https://via.placeholder.com/600/92c952" alt="img 1" /> -->
 
-                <p class="lead quotes" style="margin: auto;">
-                  <fa-icon  [icon]="faqoutes"></fa-icon> {{t}} 
+                <p class="lead testimonial--quote  arrow-bottom" style="margin: auto;">
+                  <fa-icon  [icon]="faqoutes"></fa-icon> {{t.text}} 
                 </p>
 
                 <!-- <p></p> -->
               </div>
               <div class="mt-4">
-                <h6>John White</h6>
-                <p >Work Injury Treatment</p>
+                <cite class="testimonial--author">{{t.author}}</cite>
+                <p class="testimonial--description">{{t.treatment}}</p>
               </div>
             </ng-template>
           </ng-container>
@@ -541,12 +541,12 @@
       
     </div>
 
-    <div class="row mt-5 pt-5 justify-content-center">
-      <div class="col-md-5 align-items-center text-center">
+    <div class="row mt-4 pt-5 justify-content-center">
+      <div class="col-md-5 align-items-center text-start">
         <h2>Professional <strong>Membership & Registration</strong></h2>
       </div>
    
-      <div class="col-md-5 align-items-center">
+      <div class="col-md-6 align-items-center">
         <img class="ms-4" height="80px" src="assets/hcpc.jpg">
         <img class="ms-4" height="80px" src="assets/rc.jpg">
         <img class="ms-4" height="30px" src="assets/mascip.png">
