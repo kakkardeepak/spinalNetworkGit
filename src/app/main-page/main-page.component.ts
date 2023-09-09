@@ -17,7 +17,7 @@ export class MainPageComponent implements OnInit {
     touchDrag: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 200,
+    navSpeed: 800,
     margin:40,
     navText: ['&#8249', '&#8250;'],
     responsive: {

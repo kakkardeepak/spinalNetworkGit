@@ -20,6 +20,6 @@ export class AppComponent {
 
   goToURL(url : any)
   {
-    this.router.navigateByUrl('/main#'+ url)
+    this.router.navigateByUrl('/main#'+ url, {skipLocationChange : true})
   }
 }
