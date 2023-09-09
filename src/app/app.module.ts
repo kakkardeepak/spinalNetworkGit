@@ -9,13 +9,15 @@ import { RehabilitationComponent } from './rehabilitation/rehabilitation.compone
 import { ExpertWitnessComponent } from './expert-witness/expert-witness.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PrivatePolicyComponent } from './private-policy/private-policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     RehabilitationComponent,
-    ExpertWitnessComponent
+    ExpertWitnessComponent,
+    PrivatePolicyComponent
   ],
   imports: [
     BrowserModule,
