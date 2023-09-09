@@ -88,36 +88,43 @@
     <div class="col-md-4 mt-3 justify-content-center">
         <h2 class="widget-title"><span class="fw-normal">Get </span>in touch</h2>
         <p class="mt-2 paragraph">Our network of occupational therapists provide Rehabilitation Services in numerous specialist areas AND Expert Witness Services.</p>
-       <div class="row ">
-            <div class="col-md-6 mt-2">
-                <input class="w-100" placeholder="First Name">
-            </div>
-            <div class="col-md-6 mt-2">
-                <input class="w-100" placeholder="Last Name">
-            </div>
-       </div>
-       <div class="row mt-2">
-            <div class="col-md-12">
-                <input class="w-100" placeholder="Email Address">
-            </div>
-       </div>
-       <div class="row mt-2">
-        <div class="col-md-12">
-            <input class="w-100" placeholder="Subject">
+       
+        <form action="https://formsubmit.co/cc365c09528370f374b6a0f99c99ae6a" method="POST">
+          
+          <div class="row ">
+              <div class="col-md-6 mt-2">
+                  <input type="text" name="Firstname" class="w-100" placeholder="First Name" required>
+              </div>
+              <div class="col-md-6 mt-2">
+                  <input type="text" name="Lastname" class="w-100" placeholder="Last Name" required>
+              </div>
         </div>
-         </div>
-
-         <div class="row mt-2">
-            <div class="col-md-12">
-                <textarea cols="10" rows="5" class="w-100" placeholder="Any Question for US?"></textarea>
-            </div>
-        </div>
-
         <div class="row mt-2">
-            <div class="col-md-12">
-                <button class="btn btn-primary w-100">Submit your Query</button>
-            </div>
+              <div class="col-md-12">
+                  <input type="email" name="email" class="w-100" placeholder="Email Address" required>
+              </div>
         </div>
+        <div class="row mt-2">
+          <div class="col-md-12">
+              <input class="w-100"  name="_subject" placeholder="Subject" required>
+          </div>
+          </div>
+
+          <div class="row mt-2">
+              <div class="col-md-12">
+                  <textarea name="message" cols="10" rows="5" class="w-100" placeholder="Any Question for Us?" required></textarea>
+              </div>
+          </div>
+
+          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="row mt-2">
+              <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary w-100">Submit your Query</button>
+              </div>
+          </div>
+        </form>
 
         
       </div>
