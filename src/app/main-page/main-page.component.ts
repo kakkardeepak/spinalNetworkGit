@@ -19,6 +19,7 @@ export class MainPageComponent implements OnInit {
     dots: false,
     navSpeed: 800,
     margin:40,
+    autoplay : true,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
