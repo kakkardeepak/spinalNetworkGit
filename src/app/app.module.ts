@@ -10,6 +10,9 @@ import { ExpertWitnessComponent } from './expert-witness/expert-witness.componen
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrivatePolicyComponent } from './private-policy/private-policy.component';
+import { ViewportScroller } from '@angular/common';
+import { Router, Scroll } from '@angular/router';
+import { filter } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -29,4 +32,25 @@ import { PrivatePolicyComponent } from './private-policy/private-policy.componen
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+  constructor(router: Router, viewportScroller: ViewportScroller) {
+    viewportScroller.setOffset([0, 50]);
+    router.events.pipe(filter(e => e instanceof Scroll)).subscribe((e : any) => {
+      if (e.anchor) {
+        // anchor navigation
+        /* setTimeout is the core line to solve the solution */
+        setTimeout(() => {
+          viewportScroller.scrollToAnchor(e.anchor);
+        })
+      } else if (e.position) {
+        // backward navigation
+        viewportScroller.scrollToPosition(e.position);
+      } else {
+        // forward navigation
+        viewportScroller.scrollToPosition([0, 0]);
+      }
+    });
+  }
+ }
