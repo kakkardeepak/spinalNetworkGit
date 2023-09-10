@@ -1,5 +1,5 @@
 
-@media(max-width : 700px)
+@media(max-width : 821px)
 {
   .carousel-caption {
     top : 85%;
@@ -39,7 +39,7 @@
   }
 }
 
-@media(min-width : 700px)
+@media(min-width : 821px)
 {
   .carousel-caption {
     // position: absolute;
@@ -134,7 +134,7 @@
   // transform: translateY(-100%);
 }
 
-@media(min-width : 700px)
+@media(min-width : 821px)
 {
     .img-wrapper > img {
       height : 580px;
@@ -220,7 +220,7 @@
     // background-color: gray;
   }
 
-  @media(min-width : 700px)
+  @media(min-width : 821px)
   {
     .flex-container {
         // flex-wrap: nowrap;
@@ -255,7 +255,7 @@
     text-align: left;
   }
 
-// @media(min-width : 700px)
+// @media(min-width : 821px)
 //   {
 //     .paragraph  {
 //         text-align: left;
@@ -267,6 +267,18 @@
     position:relative;
     display:inline-block;
     // background-color: transparent;
+  }
+
+  .img-container .img{
+   height: 40%;
+  }
+
+  @media(min-width : 821px)
+  {
+    .img-container .img{
+      height: 60%;
+     }
+  
   }
 
 //   .img{
@@ -394,7 +406,7 @@ textarea {
     color: #464646;
 }
 
-@media(min-width : 700px)
+@media(min-width : 821px)
 {
   .testimonial--quote
   {
@@ -470,6 +482,16 @@ textarea {
   border-radius: 50%;
   text-align: center;
   transition: all 100ms ease-out;
+}
+
+.whyChooseUs .card {
+  font-size: 15px;
+}
+
+@media(min-width : 821px) {
+  .whyChooseUs .card {
+    font-size: 20px;
+  }
 }
 
 
