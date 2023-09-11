@@ -74,7 +74,7 @@
     font-size: 35px;
     font-weight: bold;
     margin: -1px;
-    padding: 0px 20px 3px 20px;
+    padding: 0px 20px 5px 20px;
     background: #00425A;
     display: inline-block;
     cursor: pointer;
@@ -85,10 +85,21 @@
 color: #BFDB38;
 font-size: 35px;
 margin: 1px;
-padding: 0px 20px 3px 20px;
+padding: 0px 20px 5px 20px;
 background: #00425A;
 display: inline-block;
 cursor: pointer;
 font-weight: bold;
 border-radius: 0 40px 40px 0;
+height : 63% !important;
+}
+
+.owl-theme .owl-nav .owl-next:hover
+{
+    background: #FC7300;
+}
+
+.owl-theme .owl-nav .owl-prev:hover
+{
+    background: #FC7300;
 }
