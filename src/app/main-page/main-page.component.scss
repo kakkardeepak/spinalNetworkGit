@@ -178,7 +178,8 @@
     .memberImg-wrapper:hover > .content {
       opacity: 1;
       background-color: rgb(19,47,111);
-      // margin: 5px;
+      margin: 15px;
+      border-radius: 5px;
       // transform: translateY(-100%);
   }
 }

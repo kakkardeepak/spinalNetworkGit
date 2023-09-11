@@ -70,23 +70,25 @@
     text-decoration: none;
 }
 .owl-theme .owl-nav .owl-prev {
-    color: #FFF;
+    color: #BFDB38;
     font-size: 35px;
+    font-weight: bold;
     margin: -1px;
     padding: 0px 20px 3px 20px;
-    background: #9a65a5;
+    background: #00425A;
     display: inline-block;
     cursor: pointer;
     border-radius: 40px 0 0 40px;
 }
 
 .owl-theme .owl-nav .owl-next {
-color: #FFF;
+color: #BFDB38;
 font-size: 35px;
 margin: 1px;
 padding: 0px 20px 3px 20px;
-background: #9a65a5;
+background: #00425A;
 display: inline-block;
 cursor: pointer;
+font-weight: bold;
 border-radius: 0 40px 40px 0;
 }
