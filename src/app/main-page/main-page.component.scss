@@ -412,7 +412,7 @@ textarea {
   {
       // margin: 30px 0;
       // padding: 30px 40px 35px 90px;
-      font-size: 20px;
+      font-size: 15px;
       line-height: 1.5;
       color: #a5a5a5;
       border-radius: 2px;
@@ -448,7 +448,7 @@ textarea {
 .card.noTransform
 {
   transform: none;
-  border: 1px solid black;
+  border: 1px solid rgb(237,238, 238,0.85);
 }
 
 .card.noTransform::after
@@ -463,8 +463,8 @@ textarea {
     background-color: #ffffff;
     transform: rotate(45deg);
     box-shadow: 1px 5px 0 0 rgba(0, 0, 0, 0.015);
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: 1px solid rgb(237,238, 238,0.85);;
+    border-bottom: 1px solid rgb(237,238, 238,0.85);;
 }
 
 .testimonial--quote::before {
@@ -477,21 +477,27 @@ textarea {
   font-size: 91px;
   font-family: Georgia, Times, 'Times New Roman', serif;
   line-height: 98px;
-  color: #a5a5a5;
+  color: rgba(50, 50, 50, 0.1);
   text-shadow: none;
   border-radius: 50%;
   text-align: center;
   transition: all 100ms ease-out;
 }
 
-.whyChooseUs .card {
-  font-size: 15px;
-}
 
 @media(min-width : 821px) {
   .whyChooseUs .card {
     font-size: 20px;
   }
+}
+
+.whyChooseUs .card-title {
+  font-size: 18px;
+}
+
+.whyChooseUs .card-text
+{
+  font-size: 14px;
 }
 
 
