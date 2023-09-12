@@ -40,8 +40,8 @@
             <img src="assets/hand.png" style=" height: 50px; width:50px" alt="LOGO">
           </div>
           <div class="col-10">
-            <p class="fw-bold mt-2 mb-0">Our Services</p>
-            <p class="mt-0">Rehabilitation Services, Expert Witness Services</p>
+            <a style="cursor: pointer;" (click)="goToURL('OurServices')"><p class="fw-bold mt-2 mb-0">Our Services</p>
+            <p class="mt-0">Rehabilitation Services, Expert Witness Services</p></a>
           </div>
         </div>
       </div>
@@ -62,8 +62,10 @@
             <fa-icon class="fa-2x" [icon]="faEmail"></fa-icon>
           </div>
           <div class="col-10">
-            <p class="fw-bold mt-2 mb-0">Send us a Message</p>
-            <p class="mt-0">info@physiotherapy.com</p>
+            <a style="cursor: pointer;" (click)="goToURL('AboutUs')">
+              <p class="fw-bold mt-2 mb-0">Send us a Message</p>
+              <p class="mt-0">info@physiotherapy.com</p>
+            </a>
           </div>
         </div>
       </div>
