@@ -132,6 +132,7 @@
 .img-wrapper:hover > .content .paragraph{
   opacity: 1;
   text-align: center;
+  transition-delay: 1s;
   // transform: translateY(-100%);
 }
 
