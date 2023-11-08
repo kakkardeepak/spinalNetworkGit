@@ -19,7 +19,7 @@ export class MainPageComponent implements OnInit {
     dots: false,
     navSpeed: 800,
     margin:40,
-    autoplay : true,
+    autoplay : false,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
@@ -29,7 +29,7 @@ export class MainPageComponent implements OnInit {
       //   items: 1
       // },
       760: {
-        items: 2
+        items: 1
       },
       // 1000: {
       //   items: 2
@@ -39,28 +39,14 @@ export class MainPageComponent implements OnInit {
   }
 
   testimonials = [ 
-    {text : "My physical therapist is excellent! The whole office is very friendly and helpful. Physio is absolutely outstanding. \
-     Thank you very much for your great, attentive service",
-     author : "John White",
-     treatment : "Back Pain Treatment"
+    {text : "I had a very weak arm with no appreciate movement at all. With intensive sessions to my arm, within four weeks my arm started to move and my fingers started to grab small objects; my shoulders could move to bigger angles. I could bend my elbow and touch my knees, chest and forehead. Everyday with home exercise provided I regain my confidence, which has been possible by care and dedication I receive from Shiva and the team",
+     author : "Client",
+     treatment : "Arm Treatment"
     },
-    {text : "Everyone I worked with was wonderful, very professional, caring and prompt. My therapist was great, as were all of the aids!",
-     author : "Christopher  Stroke",
-     treatment : "Shoulder Pain Treatment"
-    },
-    {text : "All of the staff was fantastic! The care I received was impeccable. Great place! I also love the availability of the Fit Plan for\
-    continued support after my discharge Christopher Strock Back Pain Treatment",
-     author : "Dave",
-     treatment : "Sports Injury Treatment"
-    },
-    {text : "I had a really positive experience and my shoulder is totally functional again, without pain! I really enjoyed my therapist and all of the rest of the staff",
-     author : "Tom",
-     treatment : "Back Pain Treatment"
+    {text : "I came from egypt to the UK for rehabiliation. I have C6/C7 level of spinal cord injury. My OT worked with me and pushed me to my best capacity.At first I did not undertand the importance of the OT interventions, but when I returned home, I realised that I could do things independantly with skills and techniques taught . All credit goes to my OT who pushed me to my limits. I am very independant now and my hands function has also improved so much.",
+     author : "Client",
+     treatment : "Spinal Injury Treatment"
     }
-     
-     
-     
-  
   ]
 
   faqoutes = faQuoteLeft;
