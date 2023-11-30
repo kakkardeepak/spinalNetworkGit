@@ -39,11 +39,11 @@ export class MainPageComponent implements OnInit {
   }
 
   testimonials = [ 
-    {text : "I had a very weak arm with no appreciate movement at all. With intensive sessions to my arm, within four weeks my arm started to move and my fingers started to grab small objects; my shoulders could move to bigger angles. I could bend my elbow and touch my knees, chest and forehead. Everyday with home exercise provided I regain my confidence, which has been possible by care and dedication I receive from Shiva and the team",
+    {text : "I had a very weak arm with no appreciable movement at all. With intensive therapy, within four weeks my arm started to move and my fingers were able to grab small objects and there was significantly increased movement in  my shoulders. I could bend my elbow and touch my knees, chest and forehead. The home exercise regime I was provided with helped me to regain my confidence, which has been made possible by the care and dedication i have received from Shiva and the team",
      author : "Client",
      treatment : "Arm Treatment"
     },
-    {text : "I came from egypt to the UK for rehabiliation. I have C6/C7 level of spinal cord injury. My OT worked with me and pushed me to my best capacity.At first I did not undertand the importance of the OT interventions, but when I returned home, I realised that I could do things independantly with skills and techniques taught . All credit goes to my OT who pushed me to my limits. I am very independant now and my hands function has also improved so much.",
+    {text : "I came from egypt to the UK for rehabiliation having sustained a C6/C7 level of spinal cord injury. My OT worked with me and helped me to function to my maximum capacity.At first I did not undertand the importance of the OT interventions, but when I returned home, I realised that I was able to  do things independantly with the skills and techniques I had been taught . All credit goes to my OT who pushed me to my limits. I am very independant now and my hands function has also improved so much.",
      author : "Client",
      treatment : "Spinal Injury Treatment"
     }
