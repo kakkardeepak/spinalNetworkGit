@@ -22,16 +22,16 @@
         <div class="w-100 me-5">        
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end" >
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold active"  style="cursor: pointer;color: #00425A;" aria-current="page" routerLinkActive="active" [routerLink]="['/main']">Home</a>
+            <a class="nav-link fs-5 fw-bold active"  style="cursor: pointer;color: #314c78;" aria-current="page" routerLinkActive="active" [routerLink]="['/main']">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold" style="cursor: pointer;color: #00425A;" (click)="goToURL('AboutUs')">About Us</a>
+            <a class="nav-link fs-5 fw-bold" style="cursor: pointer;color: #314c78;" (click)="goToURL('AboutUs')">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold" style="cursor: pointer;color: #00425A;" (click)="goToURL('OurServices')">Our Services</a>
+            <a class="nav-link fs-5 fw-bold" style="cursor: pointer;color: #314c78;" (click)="goToURL('OurServices')">Our Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold" style="cursor: pointer;color: #00425A;" (click)="goToURL('AboutUs')">Contact Us</a>
+            <a class="nav-link fs-5 fw-bold" style="cursor: pointer;color: #314c78;" (click)="goToURL('AboutUs')">Contact Us</a>
           </li>
         </ul>   
     </div>
@@ -44,8 +44,6 @@
       <div class="col-lg-4">
         <div class="row align-items-center">
           <div class="col-2" >
-            <!-- <fa-icon class="fa-2x" [icon]="faHandPeace"></fa-icon> -->
-            <!-- <img src="assets/hand.png" style=" height: 50px; width:50px" alt="LOGO"> -->
             <img src="assets/services.png" style=" height: 50px; width:50px" alt="LOGO">
           </div>
           <div class="col-10">
@@ -82,14 +80,16 @@
       </div>
     </div>
     <router-outlet></router-outlet>
-    <div class="row p-4 justify-content-start" style="background-color: #00425A; color: wheat;">
+    <div class="row p-4 justify-content-start" style="background-color: #314c78; color: wheat;">
         <div class="col-md-3">
           Copyright 2023 Spinal OT Network
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <a style="color: #1F8A70"routerLinkActive="active" [routerLink]="['/privatePolicy']">Privacy Policy</a>
         </div>
-       
+        <div class="col-md-3">
+          <a style="color: #1F8A70"routerLinkActive="active" [routerLink]="['/cookiePage']">Cookie Policy</a>
+        </div>
     </div>
 </div>
     

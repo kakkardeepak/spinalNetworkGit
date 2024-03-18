@@ -4,6 +4,7 @@ import { ExpertWitnessComponent } from './expert-witness/expert-witness.componen
 import { MainPageComponent } from './main-page/main-page.component';
 import { RehabilitationComponent } from './rehabilitation/rehabilitation.component';
 import { PrivatePolicyComponent } from './private-policy/private-policy.component';
+import { CookiePageComponent } from './cookie-page/cookie-page.component';
 
 const routes: Routes = [
   { path: 'main', component: MainPageComponent, pathMatch: 'full'},
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'expertWitness', component: ExpertWitnessComponent, pathMatch: 'full'},
   { path: 'main', component: MainPageComponent, pathMatch: 'full'},
   { path: 'privatePolicy', component: PrivatePolicyComponent, pathMatch: 'full'},
+  {path: 'cookiePage', component: CookiePageComponent, pathMatch: 'full'},
   { path: '', redirectTo: '/main', pathMatch: 'full' }
   
 ];

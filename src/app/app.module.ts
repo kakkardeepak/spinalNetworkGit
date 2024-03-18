@@ -13,6 +13,7 @@ import { PrivatePolicyComponent } from './private-policy/private-policy.componen
 import { ViewportScroller } from '@angular/common';
 import { Router, Scroll } from '@angular/router';
 import { filter } from 'rxjs';
+import { CookiePageComponent } from './cookie-page/cookie-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { filter } from 'rxjs';
     MainPageComponent,
     RehabilitationComponent,
     ExpertWitnessComponent,
-    PrivatePolicyComponent
+    PrivatePolicyComponent,
+    CookiePageComponent
   ],
   imports: [
     BrowserModule,

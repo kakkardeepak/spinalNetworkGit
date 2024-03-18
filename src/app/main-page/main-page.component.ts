@@ -43,7 +43,7 @@ export class MainPageComponent implements OnInit {
      author : "Client",
      treatment : "Arm Treatment"
     },
-    {text : "I came from egypt to the UK for rehabiliation having sustained a C6/C7 level of spinal cord injury. My OT worked with me and helped me to function to my maximum capacity.At first I did not undertand the importance of the OT interventions, but when I returned home, I realised that I was able to  do things independantly with the skills and techniques I had been taught . All credit goes to my OT who pushed me to my limits. I am very independant now and my hands function has also improved so much.",
+    {text : "I came from Egypt to the UK for rehabiliation having sustained a C6/C7 level of spinal cord injury. My OT worked with me and helped me to function to my maximum capacity. At first I did not undertand the importance of the OT interventions, but when I returned home, I realised that I was able to  do things independantly with the skills and techniques I had been taught . All credit goes to my OT who pushed me to my limits. I am very independant now and my hands function has also improved so much.",
      author : "Client",
      treatment : "Spinal Injury Treatment"
     }
