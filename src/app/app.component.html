@@ -3,9 +3,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid" style="background-color: rgba(250,250,250);" >
       <div class="wrapper">
-          <img class="img-logo" src="assets/Color logo - no background.png" [routerLink]="['/main']" alt="LOGO">
-          <!-- <img class="img-logo" src="assets/Color logo - no background.png" [routerLink]="['/main']" alt="LOGO"> -->
-          <!-- <div><p class="img-logo-text">An independent NETWORK and COOPERATIVE of specialist Occupational Therapists</p></div> -->
+          <img class="img-logo" src="assets/logo/Color_logo.png" [routerLink]="['/main']" 
+          alt="LOGO" srcset="assets/logo/Color_logo_1.png 600w, assets/logo/Color_logo_2.png 300x, assets/logo/Color_logo.png 1000w">
           <div class="img-logo-text">An independent NETWORK and COOPERATIVE of specialist Occupational Therapists</div>
         </div>
       
@@ -81,14 +80,18 @@
     </div>
     <router-outlet></router-outlet>
     <div class="row p-4 justify-content-start" style="background-color: #314c78; color: wheat;">
-        <div class="col-md-3">
-          Copyright 2023 Spinal OT Network
+        <div class="col-md-5">
+          &copy; Copyright 2023 Spinal OT Network. All rights reserved.
         </div>
         <div class="col-md-2">
-          <a style="color: #1F8A70"routerLinkActive="active" [routerLink]="['/privatePolicy']">Privacy Policy</a>
+          <a style="color: #FC7300;"routerLinkActive="active" [routerLink]="['/privatePolicy']">Privacy Policy</a>
         </div>
         <div class="col-md-3">
-          <a style="color: #1F8A70"routerLinkActive="active" [routerLink]="['/cookiePage']">Cookie Policy</a>
+          <a style="color: #FC7300;"routerLinkActive="active" [routerLink]="['/cookiePage']">Cookie Policy</a>
+        </div>
+        <div>
+          <br>
+          <p style="color: #FC7300;">Icons by <a style="color: #FC7300;" href="www.icons8.com" title=" icons">icons8</a> and used as per usage licence terms. <a style="color: #FC7300;" href="https://icons8.com/license">www://icons8.com/license</a></p>
         </div>
     </div>
 </div>

@@ -8,7 +8,7 @@
     width: 140%;
     max-width: 400px;
     margin-left: 30px; 
-    background-image: url(/src/assets/logo.png);
+    background-image: url(/src/assets/logo/Color_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -18,14 +18,34 @@
     // height:auto; 
     // width: 600px;
     width: 200%;
-    max-width: 500px;
+    // max-width: 500px;
     margin-left: 40px; 
-    font-size: 13px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    // font-size: 13px;
+    font-weight: 400;
+    font-size: clamp(10px, 0.8vw + 0.2rem, 20px);
+    // size-adjust: auto;
     // font-size: 1.1vw;
     cursor: pointer;
 }
+
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+    
+  }
+
+li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: #FC7300;
+  }
+
+  
 
 // .carousel-caption {
 //     position: absolute;

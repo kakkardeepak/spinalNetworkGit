@@ -27,15 +27,17 @@
 
   .heading
   {
-    font-size: 14px;
+    font-size: 13px;
     text-align: left;
     font-weight: bold;
+    background-color: rgba(49, 76, 120, 0.7);
   }
 
   .text
   {
-    font-size: 9px;
+    font-size: 8px;
     text-align: left;
+    background-color: rgba(49, 76, 120, .7);
   }
 }
 
@@ -62,13 +64,15 @@
 
   .heading
   {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
+    background-color: rgba(49, 76, 120, .7);
   }
 
   .text
   {
-    font-size: 18px;
+    font-size: 16px;
+    background-color: rgba(49, 76, 120, .7);
   }
 }
 
@@ -357,28 +361,6 @@ textarea {
     padding: 5px;
 }
 
-// @media screen and (min-width:576px)
-// {
-//   .carousel-inner{
-//     display: flex;
-//   }
-
-//   .carousel-item{
-//     display: block;
-//     margin-right: 0;
-//     flex : 0 0 calc(100%/2);
-//   }
-// }
-
-// .carousel-inner{
-//   padding:1em;
-  
-// }
-
-// .card{
-//   margin : 0 0.5em;
-// }
-
 .carousel-inner > .carousel-item > img
 { 
   object-fit: fill;
@@ -457,19 +439,6 @@ textarea {
     color: #003366;
 }
 }
-
-// .arrow-bottom:after {
-//   content: "\142F";
-//   position: absolute;
-//   left: 30px;
-//   bottom: -23px;
-//   font-size: 20px;
-//   // color: 
-//   // border-top: 15px solid rgb(243,243,243);
-//   // border-right: 15px solid transparent;
-//   // border-left: 15px solid transparent;
-//   // border-bottom: none;
-// }
 
 .card.noTransform
 {

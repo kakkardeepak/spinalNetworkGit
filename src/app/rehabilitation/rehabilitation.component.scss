@@ -24,7 +24,7 @@
 {
   position: absolute;
   inset: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -42,6 +42,7 @@
 .img-wrapper:hover > .content .paragraph{
   opacity: 1;
   text-align: center;
+  font-size: medium;
   transition-delay: 1s;
   // transform: translateY(-100%);
 }
@@ -110,4 +111,5 @@
 
 .paragraph {
   text-align: left;
+  font-size: medium;
 }
